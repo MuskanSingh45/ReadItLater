@@ -6,19 +6,85 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0404076E3007CFC500463992 /* ReadItLaterShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 040407643007CFC500463992 /* ReadItLaterShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0404076C3007CFC500463992 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0468A0993006B2A600EBA3B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040407633007CFC500463992;
+			remoteInfo = ReadItLaterShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040407733007CFC500463992 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0404076E3007CFC500463992 /* ReadItLaterShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		040407643007CFC500463992 /* ReadItLaterShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReadItLaterShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0468A0A13006B2A600EBA3B2 /* ReadItLater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadItLater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0404076F3007CFC500463992 /* Exceptions for "ReadItLaterShare" folder in "ReadItLaterShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 040407633007CFC500463992 /* ReadItLaterShare */;
+		};
+		0468580B3007E714001AEBE5 /* Exceptions for "ReadItLater" folder in "ReadItLaterShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shared/Article.swift,
+				Shared/DiskStore.swift,
+				Shared/ReadingSession.swift,
+			);
+			target = 040407633007CFC500463992 /* ReadItLaterShare */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		040407653007CFC500463992 /* ReadItLaterShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0404076F3007CFC500463992 /* Exceptions for "ReadItLaterShare" folder in "ReadItLaterShare" target */,
+			);
+			path = ReadItLaterShare;
+			sourceTree = "<group>";
+		};
 		0468A0A33006B2A600EBA3B2 /* ReadItLater */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0468580B3007E714001AEBE5 /* Exceptions for "ReadItLater" folder in "ReadItLaterShare" target */,
+			);
 			path = ReadItLater;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		040407613007CFC500463992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0468A09E3006B2A600EBA3B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				0468A0A33006B2A600EBA3B2 /* ReadItLater */,
+				040407653007CFC500463992 /* ReadItLaterShare */,
 				0468A0A23006B2A600EBA3B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				0468A0A13006B2A600EBA3B2 /* ReadItLater.app */,
+				040407643007CFC500463992 /* ReadItLaterShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +116,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		040407633007CFC500463992 /* ReadItLaterShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040407703007CFC500463992 /* Build configuration list for PBXNativeTarget "ReadItLaterShare" */;
+			buildPhases = (
+				040407603007CFC500463992 /* Sources */,
+				040407613007CFC500463992 /* Frameworks */,
+				040407623007CFC500463992 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				040407653007CFC500463992 /* ReadItLaterShare */,
+			);
+			name = ReadItLaterShare;
+			packageProductDependencies = (
+			);
+			productName = ReadItLaterShare;
+			productReference = 040407643007CFC500463992 /* ReadItLaterShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0468A0A03006B2A600EBA3B2 /* ReadItLater */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0468A0AC3006B2A700EBA3B2 /* Build configuration list for PBXNativeTarget "ReadItLater" */;
@@ -55,10 +145,12 @@
 				0468A09D3006B2A600EBA3B2 /* Sources */,
 				0468A09E3006B2A600EBA3B2 /* Frameworks */,
 				0468A09F3006B2A600EBA3B2 /* Resources */,
+				040407733007CFC500463992 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0404076D3007CFC500463992 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0468A0A33006B2A600EBA3B2 /* ReadItLater */,
@@ -80,6 +172,9 @@
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
+					040407633007CFC500463992 = {
+						CreatedOnToolsVersion = 26.6;
+					};
 					0468A0A03006B2A600EBA3B2 = {
 						CreatedOnToolsVersion = 26.6;
 					};
@@ -100,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				0468A0A03006B2A600EBA3B2 /* ReadItLater */,
+				040407633007CFC500463992 /* ReadItLaterShare */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		040407623007CFC500463992 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0468A09F3006B2A600EBA3B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +218,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		040407603007CFC500463992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0468A09D3006B2A600EBA3B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +234,78 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0404076D3007CFC500463992 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040407633007CFC500463992 /* ReadItLaterShare */;
+			targetProxy = 0404076C3007CFC500463992 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		040407713007CFC500463992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReadItLaterShare/ReadItLaterShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 394XMP22UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReadItLaterShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReadItLaterShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amansingh.ReadItLater.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040407723007CFC500463992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReadItLaterShare/ReadItLaterShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 394XMP22UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReadItLaterShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReadItLaterShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amansingh.ReadItLater.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		0468A0AA3006B2A700EBA3B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -244,8 +425,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReadItLater/ReadItLater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 394XMP22UH;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -265,7 +448,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TwinStack.ReadItLater;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amansingh.ReadItLater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -286,8 +469,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReadItLater/ReadItLater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 394XMP22UH;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -307,7 +492,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TwinStack.ReadItLater;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amansingh.ReadItLater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -326,6 +511,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		040407703007CFC500463992 /* Build configuration list for PBXNativeTarget "ReadItLaterShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040407713007CFC500463992 /* Debug */,
+				040407723007CFC500463992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0468A09C3006B2A600EBA3B2 /* Build configuration list for PBXProject "ReadItLater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
