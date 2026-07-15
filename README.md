@@ -38,13 +38,14 @@ A SwiftUI iOS application built for the Philonet Reading Timer Assignment.
 - Displays merge reason in the debug panel.
 
 ## Project Structure
-
+```text
 ReadItLater/
-├── App/
-├── Models/
-├── Services/
-├── Persistence/
-├── Shared/
-├── ViewModels/
-├── Views/
-└── ReadItLaterShare/
+├── App/                 # App entry point and configuration
+├── Models/              # Data models
+├── Services/            # Business logic and networking
+├── Persistence/         # Database/Core Data/SwiftData layer
+├── Shared/              # Shared utilities, extensions, constants
+├── ViewModels/          # MVVM view models
+├── Views/               # SwiftUI views and screens
+└── ReadItLaterShare/    # Share Extension
+```
